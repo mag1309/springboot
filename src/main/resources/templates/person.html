@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8"></meta>
+	<title>My Details</title>
+</head>
+<body>
+  	<h3>Details of <span th:text="${person.id}"></span></h3>
+	<table>
+        <tr>
+            <td width="20%">First Name</td><td th:text="${person.firstName}"></td>
+        </tr>
+        <tr>
+            <td width="20%">Last Name</td><td th:text="${person.lastName}"></td>
+        </tr>
+        <tr>
+        	<td width="20%">Email</td><td th:text="${person.email}"></td>
+        </tr>
+        <tr>    
+            <td width="20%">Phone</td><td th:text="${person.phone}"></td>
+        </tr>
+    </table>
+</body>
